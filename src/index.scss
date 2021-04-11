@@ -1,0 +1,52 @@
+$link-color: #79D4FF;
+$link-color--visited: #79D4FF;
+$background-color: #292C34;
+
+
+@font-face {
+  font-family: 'telegramo';
+  src: url(./fonts/telegramoA.otf);
+}
+
+html {
+  height: 100%;
+  overflow-wrap: anywhere;
+  font-family: 'telegramo', serif;
+}
+
+body, #root {
+  height: 100%;
+  min-height: max-content;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: $background-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 3vmax;
+    color: $link-color;
+
+    &:visited {
+      color: $link-color--visited;
+    }
+  }
+
+  h1 {
+    font-size: 4vmax;
+  }
+
+  h2 {
+    font-size: 3vmax;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+}

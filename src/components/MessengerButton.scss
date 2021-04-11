@@ -1,0 +1,19 @@
+.messenger-button {
+  width: 15vmax;
+  height: 15vmax;
+  min-height: 50px;
+  min-width: 50px;
+  margin: 1vmax;
+  @media only screen {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+}

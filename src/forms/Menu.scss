@@ -1,0 +1,13 @@
+.menu {
+  width: 100%;
+
+  &__buttons {
+    min-height: 50%;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
